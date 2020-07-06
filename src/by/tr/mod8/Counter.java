@@ -1,9 +1,9 @@
-package by.tr.mod8;
-
+package by.tr.mod8;// следите за правильным количеством уровней в пакетах
+// решение задач по ООП следует технически рахности, если не по разным проектам, по по разным пакетам, так как разобраться в большом количестве разномастных файлов - это проблема
 import java.util.Random;
 
 public class Counter {
-    public int min_value;
+    public int min_value;// неправильное именование полей объекта, неправильно выбран атрибут доступа
     public int max_value;
     public int current_value;
     public Counter( int min, int max, int current){
@@ -21,8 +21,8 @@ public class Counter {
     }
 
     public void increaseCounter() {
-        if (current_value < max_value)
-            current_value++;
+        if (current_value < max_value)// отсутствие {}
+            current_value++;// а каково будет поведения этого метода, когда current_value Ю= max_value, как пользователь кода должен понять, что счетчик уже достиг предела?
     }
     public void decreaseCounter() {
         if (current_value > min_value)
